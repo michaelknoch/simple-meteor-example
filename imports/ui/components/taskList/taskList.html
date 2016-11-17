@@ -1,0 +1,11 @@
+<template name="taskList">
+    <ul>
+        {{#each task in tasks}}
+        {{> taskTemplate task}}
+        {{/each}}
+    </ul>
+</template>
+
+<template name="taskTemplate">
+    <li>{{text}}, {{since createdAt}}</li>
+</template>
