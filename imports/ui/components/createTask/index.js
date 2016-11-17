@@ -17,6 +17,7 @@ Template.createTask.events({
         Todos.insert({
             text,
             createdAt: new Date(),
+            userId: localStorage.getItem('id')
         });
 
         event.target.text.value = '';

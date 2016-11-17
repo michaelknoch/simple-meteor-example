@@ -15,11 +15,10 @@ Template.taskList.onCreated(function(){
 
 Template.taskList.helpers({
     tasks() {
-        Meteor.subscribe('todos.public');
+        Meteor.subscribe('todos.own', localStorage.getItem('id'));
         return Todos.find()
     }
 });
-
 
 // taskTemplate, the inner one
 
