@@ -9,4 +9,8 @@ if (Meteor.isServer) {
     Meteor.publish('todos.public', function todosPublication() {
         return Todos.find();
     });
+
+    Meteor.publish('todos.own', function todosPublication(userId) {
+        return Todos.find({userId: userId});
+    });
 }
