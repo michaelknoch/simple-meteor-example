@@ -1,8 +1,7 @@
 .createTask {
 
     padding-top: 20px;
-
-    button, input {
+    button, input, .visibility-trigger-box {
         background: white;
         border: 2px solid white;
         padding: 3px 5px;
@@ -10,6 +9,7 @@
         font-size: 20px;
         cursor: pointer;
         transition-duration: 0.3s;
+        max-width: 100%;
         &:hover {
             background: whitesmoke;
         }
@@ -17,5 +17,11 @@
 
     input {
         width: 400px;
+        margin-bottom: 10px;
+    }
+
+    .visibility-trigger-box {
+        float: left;
+        margin-right: 3px;
     }
 }
