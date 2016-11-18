@@ -10,12 +10,15 @@ Template.createTask.events({
         console.info('new stuff arrived');
 
         const text = event.target.text.value;
+        const _public = event.target.security.checked;
+
         if (text.length < 1) {
             return;
         }
 
         Todos.insert({
             text,
+            _public,
             createdAt: new Date(),
             userId: localStorage.getItem('id')
         });
