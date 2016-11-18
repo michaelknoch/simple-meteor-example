@@ -3,8 +3,8 @@
 
         <form class="new-task">
             <input type="text" name="text" placeholder="new stuff" />
-            <label>Public</label>
-            <input type="checkbox" name="security" value="true">
+            <div class="visibility-trigger-box">{{getSecurity}}</div>
+
             <button class="fire submit" type="submit">fire</button>
         </form>
 
