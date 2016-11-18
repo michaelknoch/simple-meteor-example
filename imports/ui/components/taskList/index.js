@@ -15,7 +15,7 @@ Template.taskList.onCreated(function(){
 
 Template.taskList.helpers({
     tasks() {
-        Meteor.subscribe('todos.own', localStorage.getItem('id'));
+        Meteor.subscribe('todos', localStorage.getItem('id'));
         return Todos.find()
     }
 });
