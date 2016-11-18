@@ -3,10 +3,12 @@
 </body>
 
 <template name="layout1">
-    <div class="top-wrapper">
-        {{> Template.dynamic template=top}}
-    </div>
-    <div class="main-wrapper">
-        {{> Template.dynamic template=main}}
+    <div class="container main-wrapper">
+        <div class="top-wrapper">
+            {{> Template.dynamic template=top}}
+        </div>
+        <div class="main-wrapper">
+            {{> Template.dynamic template=main}}
+        </div>
     </div>
 </template>
